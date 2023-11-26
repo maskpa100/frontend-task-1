@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var formData = new FormData(form);
         var xhr = new XMLHttpRequest();
 
-        xhr.open("POST", "https://jsonplaceholder.typicode.com/posts0", true);
+        xhr.open("POST", "https://jsonplaceholder.typicode.com/posts", true);
 
         xhr.send(formData);
 
