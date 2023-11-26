@@ -2,7 +2,11 @@ let nameInput = document.getElementById("name");
 let phoneInput = document.getElementById("phone");
 let emailInput = document.getElementById("email");
 let errorElement = document.querySelector(".error");
-
+let states = {
+  "item-name": false,
+  "item-phone": false,
+  "item-email": false,
+};
 function addError(element, element2, text) {
   const item = document.getElementById(element);
   item.classList.add("item-error");
@@ -17,6 +21,7 @@ function addError(element, element2, text) {
 }
 
 function removeError(element, element2) {
+  states[element] = true;
   const item = document.getElementById(element);
   item.classList.remove("item-error");
   item.classList.add("item-success");
@@ -52,4 +57,30 @@ emailInput.addEventListener("blur", function () {
   } else {
     removeError("item-email", "#error-email");
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("submitBtn")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+
+        var form = document.querySelector("form");
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("POST", "https://jsonplaceholder.typicode.com/posts0", true);
+
+        xhr.send(formData);
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 201) {
+            alert("Вы успешно отправили сообщение.");
+          }
+          if (xhr.readyState === 4 && xhr.status === 404) {
+            alert("Страница не найдена");
+          }
+        };
+
+    });
 });
