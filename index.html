@@ -9,30 +9,45 @@
   <body>
     <div class="feedback">
       <h1 class="title">Обратная форма</h1>
+      <div class="error"></div>
       <form method="post" class="form">
         <div class="info">
-          <div class="item item-error">
+          <div class="item" id="item-name">
             <label>ФИО</label>
-            <input type="text" name="name" size="19" value="Епифан" required />
+            <input type="text" id="name" name="name" placeholder="Епифан" />
           </div>
-          <div class="item item-success">
+          <div class="item" id="item-phone">
             <label>Телефон</label>
-            <input type="text" name="phone" size="19" value="+7 (423) 123-45-67" required />
+            <input
+              class="tel"
+              type="tel"
+              id="phone"
+              name="phone"
+              value=""
+              placeholder="+7 (423) 123-45-67" />
           </div>
-          <div class="item">
+          <div class="item" id="item-email">
             <label>E-mail</label>
-            <input type="email" name="email" size="19" value="mail@example.com" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="mail@example.com" />
           </div>
         </div>
         <div class="messages">
           <label>Сообщение</label>
-          <textarea ></textarea>
+          <textarea placeholder="Приветствую!"></textarea>
         </div>
-        <p>Отправляя форму, Вы соглашаетесь на <a href="#">обработку персональных данных</a></p>
+        <p>
+          Отправляя форму, Вы соглашаетесь на
+          <a href="#">обработку персональных данных</a>
+        </p>
         <button class="feedback-submit">Отправить</button>
       </form>
     </div>
 
-
+    <script src="main.js"></script>
+    <script src="js-inputmask.js"></script>
   </body>
 </html>
