@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Тестовое задание frontend разработчика №1</title>
+  </head>
+  <body>
+    <div class="feedback">
+      <h1 class="title">Обратная форма</h1>
+      <form method="post" class="form">
+        <div class="info">
+          <div class="item item-error">
+            <label>ФИО</label>
+            <input type="text" name="name" size="19" value="Епифан" required />
+          </div>
+          <div class="item item-success">
+            <label>Телефон</label>
+            <input type="text" name="phone" size="19" value="+7 (423) 123-45-67" required />
+          </div>
+          <div class="item">
+            <label>E-mail</label>
+            <input type="email" name="email" size="19" value="mail@example.com" required />
+          </div>
+        </div>
+        <div class="messages">
+          <label>Сообщение</label>
+          <textarea ></textarea>
+        </div>
+        <p>Отправляя форму, Вы соглашаетесь на <a href="#">обработку персональных данных</a></p>
+        <button class="feedback-submit">Отправить</button>
+      </form>
+    </div>
+
+
+  </body>
 </html>

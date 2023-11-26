@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Inter;
+}
+
+.feedback {
+  max-width: 598px;
+  border: 1px solid rgba(38, 50, 56, 0.16);
+  margin: 40px auto;
+}
+.feedback .form {
+  padding: 21px 46px;
+  text-align: center;
+}
+.feedback .form .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.feedback .form .info .item {
+  position: relative;
+  display: inline-block;
+  margin: 17px 10px;
+}
+.feedback .form .info .item label {
+  top: -12px;
+  left: 7px;
+}
+.feedback .form .messages {
+  margin-top: 16px;
+  position: relative;
+}
+.feedback .form .messages label {
+  top: -10px;
+  left: 19px;
+}
+.feedback .form .messages textarea {
+  margin: 0 10px;
+}
+.feedback .form p {
+  margin-top: 24px;
+}
+.feedback .form button {
+  margin: 17px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  position: absolute;
+  background-color: white;
+  padding: 4px;
+}
+
+textarea {
+  width: calc(100% - 42px);
+  height: 84px;
+  border-radius: 4px;
+  border: 1px solid rgba(38, 50, 56, 0.16);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 17px 10px;
+}
+
+input {
+  border-radius: 4px;
+  border: 1px solid rgba(38, 50, 56, 0.16);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 17px 9px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #263238;
+}
+
+a {
+  color: #263238;
+}
+
+button {
+  background-color: #1bb55c;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px 59px;
+}
+
+.item-error input {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+.item-error label {
+  color: rgb(255, 0, 0);
+}
+
+.item-success input {
+  border: 2px solid rgba(27, 181, 92, 0.5);
+}
+.item-success label {
+  color: rgb(27, 181, 92);
+}/*# sourceMappingURL=style.css.map */
